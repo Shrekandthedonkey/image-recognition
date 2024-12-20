@@ -1,0 +1,49 @@
+<html>
+<head>
+<title>Image Recognizer</title>
+<!-- these are the attching links of bootstrap -->
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Cinzel+Decorative:wght@400;700;900&family=Cinzel:wght@400..900&family=Dokdo&family=Kode+Mono:wght@400..700&display=swap" rel="stylesheet">   
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    
+    <!-- These are the attaching links of webcam -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+    <!-- This is the attaching link for ML5 library -->
+<script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+</head>
+<body>
+<center> 
+<h1 id="heading" class="btn-default">Image Recognition</h1>
+<h2 id="hello">Model is trained to identify the following objects:</h2>
+<h4 class="objects">Phone</h4>
+<h4 class="objects">Pencil</h4>
+<h4 class="objects">Glasses</h4>
+<h4 class="objects">Water bottle</h4>
+<h4 class="objects">Book</h4>
+<label> Webcam View</label>
+<div id="camara"></div>
+<br>
+<br>
+<label>Result</label>
+<div id="result"></div>
+<br>
+<br>
+<button onclick="take_snapshot()" class="click btn-info" >Click Image</button>
+<br>
+<br>
+<button onclick="check()" class="click btn-primary">Indentify Image</button>
+<h3>Object: <span id="object_name"> </span></h3>
+<h3>Accuracy: <span id="accuracy_name"> </span></h3>
+
+</center>
+<script src="main.js">
+
+</script>
+</body>
+
+</html>

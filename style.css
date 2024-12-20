@@ -1,0 +1,42 @@
+#heading {
+
+text-align: center;
+font-family: "Kode Mono", monospace;
+text-decoration: double underline darkcyan;
+width:250px;
+}
+/* #heading:hover {
+
+background-color: steelblue;
+border-style:ridge;
+border-width: 5px;
+
+} */
+#hello {
+
+text-align: center;
+font-family: "Caveat", cursive;
+}
+.objects {
+
+text-align: center;
+font-family: "Dokdo", system-ui;
+font-size: 30px;
+text-shadow: 2px 2px rgb(144, 182, 68);
+}
+body {
+    /* background: radial-gradient( #ef3b36, #ffffff); */
+background: linear-gradient(rgb(133, 183, 221) 0%, pink 50%, rgb(194, 228, 103) 100%)
+}
+#camara,#output {
+
+border:3px dashed black;
+width: 300px;
+height: 250px;;
+
+}
+.click {
+
+border:5px double olivedrab;
+
+}
